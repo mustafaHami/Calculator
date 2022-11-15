@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Calculatrice en javascript</title>
+		<link rel="stylesheet" type="text/css" href="calculatrice.css">
+	</head>
+	<body onload="init()">
+		<div id="calc">
+			<div id="ligne_affichage">
+				<input type="text" name="zone_affichage" id="zone_affichage" value=" "/>
+			</div>
+			<div class="ligne_boutons">
+				<input type="button" class="bouton_classique" value="MC" onclick="raz_memory()"/>
+				<input type="button"  class="bouton_classique" value="MR" onclick="affiche_memory()"/>
+				<input type="button"  class="bouton_classique" value="MS" onclick="range_memory()"/>
+				<input type="button"  class="bouton_classique" value="+-" onclick="plusmoins()"/>
+				<input type="button" id="libre1" class="bouton_simple bouton_libre" value=""/>
+			</div>
+			<div class="ligne_boutons">
+				<input id="CE" type="button" class="bouton_classique" value="CE" onclick=""/>
+				<input type="button" class="bouton_classique bouton_simple" value="("/>
+				<input type="button" class="bouton_classique bouton_simple" value=")"/>
+				<input type="button" class="bouton_classique bouton_simple" value="/"/>
+				<input type="button" id="libre2" class="bouton_simple bouton_libre" value=""/>
+			</div>
+			<div class="ligne_boutons">
+				<input type="button" class="bouton_classique bouton_simple" value="7"/>
+				<input type="button" class="bouton_classique bouton_simple" value="8"/>
+				<input type="button" class="bouton_classique bouton_simple" value="9"/>
+				<input type="button" class="bouton_classique bouton_simple" value="*"/>
+				<input type="button" id="libre3" class="bouton_simple bouton_libre" value=""/>
+			</div>
+			<div class="ligne_boutons">
+				<input type="button" class="bouton_classique bouton_simple" value="4" />
+				<input type="button" class="bouton_classique bouton_simple" value="5"/>
+				<input type="button" class="bouton_classique bouton_simple" value="6"/>
+				<input type="button" class="bouton_classique bouton_simple" value="-"/>
+				<input type="button" id="libre4" class="bouton_simple bouton_libre" value=""/>
+			</div>
+			<div class="ligne_boutons">
+				<input type="button" class="bouton_classique bouton_simple" value="1"/>
+				<input type="button" class="bouton_classique bouton_simple" value="2"/>
+				<input type="button" class="bouton_classique bouton_simple" value="3" onclick="toJson()"/>
+				<input type="button" class="bouton_classique bouton_simple" value="+"/>
+				<input type="button" id="libre5" class="bouton_simple bouton_libre" value=""/>
+			</div>
+			<div class="ligne_boutons">
+				<input type="button" class="bouton_classique bouton_simple" value="0" />
+				<input id='E' type="button" class="bouton_classique" value="E" onclick="mode_edition()"/>
+				<input type="button" class="bouton_classique bouton_simple" value="."/>
+				<input id="egale" type="button" class="bouton_classique" value="=" onclick=""/>
+				<input type="button" id="libre6" class="bouton_simple bouton_libre" value=""/>
+			</div>
+			<script src="vanilla_cookies.js"></script>
+			<script src="calculatrice.js"></script>
+		</div>
+	</body>
+</html>
+
+
